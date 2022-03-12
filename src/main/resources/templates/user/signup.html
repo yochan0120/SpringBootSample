@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<meta charset="UTF8"></meta>
+	<meta charset="UTF-8"></meta>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- CSS読込 -->
 	<link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
@@ -45,7 +45,7 @@
        </div>
        <!-- 年齢 -->
        <div class="form-group">
-       	 <label for="age"th:text="#{age}"></label>
+       	 <label for="age" th:text="#{age}"></label>
        	 <input type="text" class="form-control" th:field="*{age}"
        	 	th:errorclass="is-invalid"/>
        	 <div class="invalid-feedback" th:errors="*{age}"></div>    
@@ -61,7 +61,7 @@
        	    th:errors="*{gender}"></div>
        </div>
        <!-- 登録ボタン -->
-       <input type="submit"th:value="#{user.signup.btn}"
+       <input type="submit" th:value="#{user.signup.btn}"
        		class="btn btn-primary w-100 mt-3" />
    </form>
   </body>
