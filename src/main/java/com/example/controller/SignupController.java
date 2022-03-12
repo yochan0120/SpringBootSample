@@ -47,7 +47,7 @@ public class SignupController{
 		//入力チェック結果
 		if(bindingResult.hasErrors()) {
 			//NG:ユーザー登録画面に戻ります
-			return getSignup(model,locale,form);
+			return getSignup(model, locale, form);
 		}
 		log.info(form.toString());
 	
